@@ -1,0 +1,221 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'android';
+    src: url('../fontes/idroid.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'incosolata';
+    src: url('../fontes/Inconsolata-VariableFont_wdth,wght.ttf') format('truetype');
+}
+
+
+
+:root {
+    --cor-1:#c5ebd6;
+    --cor-2:#83e1ad;
+    --cor-3:#3ddc84;
+    --cor-4:#deffaa;
+    --cor-5:#1a5c37;
+    --cor-6:#063d1e;
+    --white:#fff;
+    --black:#000;
+
+    --fonte-android:'android';
+    --fonte-destaque:'incosolata';
+    --fonte-padrao: sans-serif;
+
+    
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: radial-gradient(ellipse closest-side, var(--cor-6), var(--cor-4));
+    font-family: var(--fonte-padrao),cursive;
+}
+header {
+    background-image: linear-gradient(to bottom, var(--cor-6), var(--cor-4));
+    min-height: 150px;
+    text-align: center;
+    padding-top: 40px;
+}
+
+header > h1{
+    color: var(--white);
+    font-family: var(--fonte-destaque);
+    margin-bottom: 20px;
+    font-size: 3em;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.637);
+}
+header > p {
+    color: var(--white);
+    font-family: var(--fonte-padrao),cursive;
+    font-size: 1.2em;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    max-width: 600px;
+    margin: auto;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.637);
+    
+
+    
+}
+a.externo::after{
+    content: '\00A0\1F517';
+
+}
+
+nav {
+    background-color: var(--cor-4);
+    padding: 10px;
+    text-align: center;
+    
+}
+nav > a {
+    text-decoration: none;
+    padding: 10px;
+    color: var(--cor-6);
+    font-weight: 600;
+    border-radius: 5px;
+    transition-duration: .6s;
+    
+    
+}
+nav > a:hover {
+    background-color: var(--cor-6);
+    color: #fff;
+    border-radius: 10px;
+
+}
+
+main {
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 30px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 20px;
+    background-color: var(--white);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.411);
+}
+main p {
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 25px;
+    line-height: 2em;
+    font-size: 1em;
+}
+main strong {
+    color: var(--cor-6);
+    font-weight: bold;
+    
+}
+
+main a {
+    color: var(--white);
+    background-image: linear-gradient(to right, var(--cor-3),var(--cor-6));
+    border-radius: 5px;
+    font-weight: bold;
+    padding: 3px;
+    transition-duration: 0.6s;
+    text-decoration: none;
+
+}
+main a:hover {
+    color: var(--white);
+    background-image: linear-gradient(to left,var(--cor-3),var(--cor-6));
+    border-radius: 5px;
+    padding: 3px;
+    text-decoration: underline;
+}
+main h1 {
+    color: var(--cor-5);
+    font-family: var(--fonte-android),sans-serif;
+    
+}
+
+main h2 {
+    font-family: var(--fonte-android),sans-serif;
+    color: var(--cor-6);
+    font-size: 1.3em;
+    text-indent: 8px;
+    background-image: linear-gradient(to right,var(--cor-4), transparent);
+
+}
+
+main img {
+
+    width: 100%;
+}
+
+main img.pequena {
+    max-width: 350px;
+    display: block;
+    margin: auto;
+}
+div.video {
+    background-color: var(--cor-4);
+    padding: 20px;
+    padding-bottom: 56.4%;
+    position: relative;
+    margin: 0px -20px 30px -20px;
+
+}
+div.video >iframe{
+    position: absolute;
+    left: 5%;
+    top: 5%;
+    height: 90%;
+    width: 90%;
+
+
+}
+
+aside h3 {
+    background-color: var(--cor-6);
+    color: var(--white);
+    padding: 10px;
+    margin: -6px -6px 0px -6px;
+    border-radius: 12px 12px 0px 0px;
+    box-shadow: 0px 0px 10px var(--cor-6);
+}
+aside {
+    background-color: var(--cor-4);
+    padding: 5px;
+    font-size: 0.9em;
+    border-radius: 12px;
+    box-shadow: 0px 0px 10px var(--cor-6);
+
+}
+aside > ul {
+    list-style-type: '\2714\00A0\00A0';
+    list-style-position: inside;
+    columns: 2;
+}
+footer {
+    text-align: center;
+    color: var(--cor-6);
+    background-image: linear-gradient(to right,var(--cor-6),var(--cor-4),var(--cor-6));
+    padding: 5px;
+    font-weight: bold;
+    
+
+}
+footer a {
+    text-decoration: none;
+    color: var(--cor-6);
+}
+footer a:hover{
+    text-decoration: underline;
+    color: var(--white);
+    background-image: linear-gradient(to right, var(--cor-3),var(--cor-6));
+    border-radius: 10px;
+    padding: 5px;
+}
